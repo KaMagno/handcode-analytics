@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFF8C202379B6005307D2 /* AppDelegate.swift */; };
+		F77AFF8F202379B6005307D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFF8E202379B6005307D2 /* ViewController.swift */; };
+		F77AFF92202379B6005307D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77AFF90202379B6005307D2 /* Main.storyboard */; };
+		F77AFF94202379B6005307D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77AFF93202379B6005307D2 /* Assets.xcassets */; };
+		F77AFF97202379B6005307D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77AFF95202379B6005307D2 /* LaunchScreen.storyboard */; };
+		F77AFFA2202379B6005307D2 /* HandCode_AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFFA1202379B6005307D2 /* HandCode_AnalyticsTests.swift */; };
+		F77AFFAD202379B6005307D2 /* HandCode_AnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFFAC202379B6005307D2 /* HandCode_AnalyticsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F77AFF9E202379B6005307D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F77AFF81202379B5005307D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F77AFF88202379B5005307D2;
+			remoteInfo = "HandCode-Analytics";
+		};
+		F77AFFA9202379B6005307D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F77AFF81202379B5005307D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F77AFF88202379B5005307D2;
+			remoteInfo = "HandCode-Analytics";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F77AFF89202379B5005307D2 /* HandCode-Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HandCode-Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77AFF8C202379B6005307D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F77AFF8E202379B6005307D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F77AFF91202379B6005307D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F77AFF93202379B6005307D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F77AFF96202379B6005307D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F77AFF98202379B6005307D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77AFF9D202379B6005307D2 /* HandCode-AnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandCode-AnalyticsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77AFFA1202379B6005307D2 /* HandCode_AnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCode_AnalyticsTests.swift; sourceTree = "<group>"; };
+		F77AFFA3202379B6005307D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77AFFA8202379B6005307D2 /* HandCode-AnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandCode-AnalyticsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77AFFAC202379B6005307D2 /* HandCode_AnalyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCode_AnalyticsUITests.swift; sourceTree = "<group>"; };
+		F77AFFAE202379B6005307D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F77AFF86202379B5005307D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77AFF9A202379B6005307D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77AFFA5202379B6005307D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F77AFF80202379B5005307D2 = {
+			isa = PBXGroup;
+			children = (
+				F77AFF8B202379B5005307D2 /* HandCode-Analytics */,
+				F77AFFA0202379B6005307D2 /* HandCode-AnalyticsTests */,
+				F77AFFAB202379B6005307D2 /* HandCode-AnalyticsUITests */,
+				F77AFF8A202379B5005307D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F77AFF8A202379B5005307D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F77AFF89202379B5005307D2 /* HandCode-Analytics.app */,
+				F77AFF9D202379B6005307D2 /* HandCode-AnalyticsTests.xctest */,
+				F77AFFA8202379B6005307D2 /* HandCode-AnalyticsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F77AFF8B202379B5005307D2 /* HandCode-Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				F77AFF8C202379B6005307D2 /* AppDelegate.swift */,
+				F77AFF8E202379B6005307D2 /* ViewController.swift */,
+				F77AFF90202379B6005307D2 /* Main.storyboard */,
+				F77AFF93202379B6005307D2 /* Assets.xcassets */,
+				F77AFF95202379B6005307D2 /* LaunchScreen.storyboard */,
+				F77AFF98202379B6005307D2 /* Info.plist */,
+			);
+			path = "HandCode-Analytics";
+			sourceTree = "<group>";
+		};
+		F77AFFA0202379B6005307D2 /* HandCode-AnalyticsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F77AFFA1202379B6005307D2 /* HandCode_AnalyticsTests.swift */,
+				F77AFFA3202379B6005307D2 /* Info.plist */,
+			);
+			path = "HandCode-AnalyticsTests";
+			sourceTree = "<group>";
+		};
+		F77AFFAB202379B6005307D2 /* HandCode-AnalyticsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F77AFFAC202379B6005307D2 /* HandCode_AnalyticsUITests.swift */,
+				F77AFFAE202379B6005307D2 /* Info.plist */,
+			);
+			path = "HandCode-AnalyticsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F77AFF88202379B5005307D2 /* HandCode-Analytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F77AFFB1202379B6005307D2 /* Build configuration list for PBXNativeTarget "HandCode-Analytics" */;
+			buildPhases = (
+				F77AFF85202379B5005307D2 /* Sources */,
+				F77AFF86202379B5005307D2 /* Frameworks */,
+				F77AFF87202379B5005307D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HandCode-Analytics";
+			productName = "HandCode-Analytics";
+			productReference = F77AFF89202379B5005307D2 /* HandCode-Analytics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F77AFF9C202379B6005307D2 /* HandCode-AnalyticsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F77AFFB4202379B6005307D2 /* Build configuration list for PBXNativeTarget "HandCode-AnalyticsTests" */;
+			buildPhases = (
+				F77AFF99202379B6005307D2 /* Sources */,
+				F77AFF9A202379B6005307D2 /* Frameworks */,
+				F77AFF9B202379B6005307D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F77AFF9F202379B6005307D2 /* PBXTargetDependency */,
+			);
+			name = "HandCode-AnalyticsTests";
+			productName = "HandCode-AnalyticsTests";
+			productReference = F77AFF9D202379B6005307D2 /* HandCode-AnalyticsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F77AFFA7202379B6005307D2 /* HandCode-AnalyticsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F77AFFB7202379B6005307D2 /* Build configuration list for PBXNativeTarget "HandCode-AnalyticsUITests" */;
+			buildPhases = (
+				F77AFFA4202379B6005307D2 /* Sources */,
+				F77AFFA5202379B6005307D2 /* Frameworks */,
+				F77AFFA6202379B6005307D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F77AFFAA202379B6005307D2 /* PBXTargetDependency */,
+			);
+			name = "HandCode-AnalyticsUITests";
+			productName = "HandCode-AnalyticsUITests";
+			productReference = F77AFFA8202379B6005307D2 /* HandCode-AnalyticsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F77AFF81202379B5005307D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = MackMobile;
+				TargetAttributes = {
+					F77AFF88202379B5005307D2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F77AFF9C202379B6005307D2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F77AFF88202379B5005307D2;
+					};
+					F77AFFA7202379B6005307D2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F77AFF88202379B5005307D2;
+					};
+				};
+			};
+			buildConfigurationList = F77AFF84202379B5005307D2 /* Build configuration list for PBXProject "HandCode-Analytics" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F77AFF80202379B5005307D2;
+			productRefGroup = F77AFF8A202379B5005307D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F77AFF88202379B5005307D2 /* HandCode-Analytics */,
+				F77AFF9C202379B6005307D2 /* HandCode-AnalyticsTests */,
+				F77AFFA7202379B6005307D2 /* HandCode-AnalyticsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F77AFF87202379B5005307D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77AFF97202379B6005307D2 /* LaunchScreen.storyboard in Resources */,
+				F77AFF94202379B6005307D2 /* Assets.xcassets in Resources */,
+				F77AFF92202379B6005307D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77AFF9B202379B6005307D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77AFFA6202379B6005307D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F77AFF85202379B5005307D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77AFF8F202379B6005307D2 /* ViewController.swift in Sources */,
+				F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77AFF99202379B6005307D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77AFFA2202379B6005307D2 /* HandCode_AnalyticsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F77AFFA4202379B6005307D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77AFFAD202379B6005307D2 /* HandCode_AnalyticsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F77AFF9F202379B6005307D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F77AFF88202379B5005307D2 /* HandCode-Analytics */;
+			targetProxy = F77AFF9E202379B6005307D2 /* PBXContainerItemProxy */;
+		};
+		F77AFFAA202379B6005307D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F77AFF88202379B5005307D2 /* HandCode-Analytics */;
+			targetProxy = F77AFFA9202379B6005307D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F77AFF90202379B6005307D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F77AFF91202379B6005307D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F77AFF95202379B6005307D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F77AFF96202379B6005307D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F77AFFAF202379B6005307D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F77AFFB0202379B6005307D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F77AFFB2202379B6005307D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B6823827K;
+				INFOPLIST_FILE = "HandCode-Analytics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-Analytics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F77AFFB3202379B6005307D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B6823827K;
+				INFOPLIST_FILE = "HandCode-Analytics/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-Analytics";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F77AFFB5202379B6005307D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B6823827K;
+				INFOPLIST_FILE = "HandCode-AnalyticsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-AnalyticsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandCode-Analytics.app/HandCode-Analytics";
+			};
+			name = Debug;
+		};
+		F77AFFB6202379B6005307D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B6823827K;
+				INFOPLIST_FILE = "HandCode-AnalyticsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-AnalyticsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandCode-Analytics.app/HandCode-Analytics";
+			};
+			name = Release;
+		};
+		F77AFFB8202379B6005307D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B6823827K;
+				INFOPLIST_FILE = "HandCode-AnalyticsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-AnalyticsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HandCode-Analytics";
+			};
+			name = Debug;
+		};
+		F77AFFB9202379B6005307D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2B6823827K;
+				INFOPLIST_FILE = "HandCode-AnalyticsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-AnalyticsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HandCode-Analytics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F77AFF84202379B5005307D2 /* Build configuration list for PBXProject "HandCode-Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77AFFAF202379B6005307D2 /* Debug */,
+				F77AFFB0202379B6005307D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F77AFFB1202379B6005307D2 /* Build configuration list for PBXNativeTarget "HandCode-Analytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77AFFB2202379B6005307D2 /* Debug */,
+				F77AFFB3202379B6005307D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F77AFFB4202379B6005307D2 /* Build configuration list for PBXNativeTarget "HandCode-AnalyticsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77AFFB5202379B6005307D2 /* Debug */,
+				F77AFFB6202379B6005307D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F77AFFB7202379B6005307D2 /* Build configuration list for PBXNativeTarget "HandCode-AnalyticsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77AFFB8202379B6005307D2 /* Debug */,
+				F77AFFB9202379B6005307D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F77AFF81202379B5005307D2 /* Project object */;
+}
