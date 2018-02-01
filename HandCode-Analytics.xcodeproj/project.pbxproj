@@ -74,6 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		199DE5B12023872A0005BAA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		199DE5B2202387320005BAA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		199DE5B42023873F0005BAA2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		F77AFF80202379B5005307D2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +118,9 @@
 		F77AFF8B202379B5005307D2 /* HandCode-Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				199DE5B42023873F0005BAA2 /* Controller */,
+				199DE5B2202387320005BAA2 /* View */,
+				199DE5B12023872A0005BAA2 /* Model */,
 				F77AFF8C202379B6005307D2 /* AppDelegate.swift */,
 				F77AFF8E202379B6005307D2 /* ViewController.swift */,
 				F77AFF90202379B6005307D2 /* Main.storyboard */,
