@@ -14,6 +14,8 @@
 		F77AFF97202379B6005307D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77AFF95202379B6005307D2 /* LaunchScreen.storyboard */; };
 		F77AFFA2202379B6005307D2 /* HandCode_AnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFFA1202379B6005307D2 /* HandCode_AnalyticsTests.swift */; };
 		F77AFFAD202379B6005307D2 /* HandCode_AnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFFAC202379B6005307D2 /* HandCode_AnalyticsUITests.swift */; };
+		F77AFFBC20238E64005307D2 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFFBB20238E64005307D2 /* ProductCollectionViewCell.swift */; };
+		F77AFFBE20238F21005307D2 /* ShowcaseCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFFBD20238F21005307D2 /* ShowcaseCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F77AFFA8202379B6005307D2 /* HandCode-AnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HandCode-AnalyticsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77AFFAC202379B6005307D2 /* HandCode_AnalyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandCode_AnalyticsUITests.swift; sourceTree = "<group>"; };
 		F77AFFAE202379B6005307D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77AFFBB20238E64005307D2 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		F77AFFBD20238F21005307D2 /* ShowcaseCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				199DE5B12023872A0005BAA2 /* Model */,
 				F77AFF8C202379B6005307D2 /* AppDelegate.swift */,
 				F77AFF8E202379B6005307D2 /* ViewController.swift */,
+				F77AFFBD20238F21005307D2 /* ShowcaseCollectionViewDataSource.swift */,
+				F77AFFBB20238E64005307D2 /* ProductCollectionViewCell.swift */,
 				F77AFFBA20238843005307D2 /* Supportin Files */,
 			);
 			path = "HandCode-Analytics";
@@ -291,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F77AFFBE20238F21005307D2 /* ShowcaseCollectionViewDataSource.swift in Sources */,
 				F77AFF8F202379B6005307D2 /* ViewController.swift in Sources */,
+				F77AFFBC20238E64005307D2 /* ProductCollectionViewCell.swift in Sources */,
 				F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
