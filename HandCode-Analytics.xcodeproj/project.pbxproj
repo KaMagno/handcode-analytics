@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		199DE5B62023888E0005BAA2 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DE5B52023888E0005BAA2 /* Product.swift */; };
 		F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFF8C202379B6005307D2 /* AppDelegate.swift */; };
 		F77AFF8F202379B6005307D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFF8E202379B6005307D2 /* ViewController.swift */; };
 		F77AFF92202379B6005307D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77AFF90202379B6005307D2 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		199DE5B52023888E0005BAA2 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		F77AFF89202379B5005307D2 /* HandCode-Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HandCode-Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77AFF8C202379B6005307D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77AFF8E202379B6005307D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		199DE5B12023872A0005BAA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				199DE5B52023888E0005BAA2 /* Product.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				F77AFF8F202379B6005307D2 /* ViewController.swift in Sources */,
 				F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */,
+				199DE5B62023888E0005BAA2 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
