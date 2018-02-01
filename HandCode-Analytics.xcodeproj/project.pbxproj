@@ -84,6 +84,7 @@
 		199DE5B2202387320005BAA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F77AFF90202379B6005307D2 /* Main.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -123,10 +124,7 @@
 				199DE5B12023872A0005BAA2 /* Model */,
 				F77AFF8C202379B6005307D2 /* AppDelegate.swift */,
 				F77AFF8E202379B6005307D2 /* ViewController.swift */,
-				F77AFF90202379B6005307D2 /* Main.storyboard */,
-				F77AFF93202379B6005307D2 /* Assets.xcassets */,
-				F77AFF95202379B6005307D2 /* LaunchScreen.storyboard */,
-				F77AFF98202379B6005307D2 /* Info.plist */,
+				F77AFFBA20238843005307D2 /* Supportin Files */,
 			);
 			path = "HandCode-Analytics";
 			sourceTree = "<group>";
@@ -147,6 +145,16 @@
 				F77AFFAE202379B6005307D2 /* Info.plist */,
 			);
 			path = "HandCode-AnalyticsUITests";
+			sourceTree = "<group>";
+		};
+		F77AFFBA20238843005307D2 /* Supportin Files */ = {
+			isa = PBXGroup;
+			children = (
+				F77AFF93202379B6005307D2 /* Assets.xcassets */,
+				F77AFF95202379B6005307D2 /* LaunchScreen.storyboard */,
+				F77AFF98202379B6005307D2 /* Info.plist */,
+			);
+			name = "Supportin Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
