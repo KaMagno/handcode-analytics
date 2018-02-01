@@ -91,5 +91,13 @@ class SignUpTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func signUp(username: String, password: String, completion: @escaping (Error?) -> Void) {
+        
+        //TODO: Fazer login
+        
+        completion(nil)
+        
+    }
 
 }

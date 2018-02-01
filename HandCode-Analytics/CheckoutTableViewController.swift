@@ -91,5 +91,13 @@ class CheckoutTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func checkOut(completion: @escaping (Error?) -> Void) {
+        
+        //TODO: Fazer login
+        
+        completion(nil)
+        
+    }
 
 }
