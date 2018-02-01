@@ -33,6 +33,7 @@ class ShowcaseCollectionViewDataSource:  NSObject,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
 //        return self.productList.count
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -49,6 +50,8 @@ class ShowcaseCollectionViewDataSource:  NSObject,UICollectionViewDataSource {
 //        cell.outletBackground.image = UIImage(data: product.photo! as Data)
 //
 //        return cell
+        
+        return UICollectionViewCell()
     }
     
     
