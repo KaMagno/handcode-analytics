@@ -15,6 +15,7 @@
 		199DE5C220238BA60005BAA2 /* ShoppingCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DE5C120238BA60005BAA2 /* ShoppingCartTableViewController.swift */; };
 		199DE5C420238BD00005BAA2 /* CheckoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DE5C320238BD00005BAA2 /* CheckoutTableViewController.swift */; };
 		199DE5C620238F980005BAA2 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DE5C520238F980005BAA2 /* ShoppingCart.swift */; };
+		592740EF202490210047D180 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592740EE202490210047D180 /* ServerManager.swift */; };
 		F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFF8C202379B6005307D2 /* AppDelegate.swift */; };
 		F77AFF8F202379B6005307D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77AFF8E202379B6005307D2 /* ViewController.swift */; };
 		F77AFF92202379B6005307D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77AFF90202379B6005307D2 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		199DE5C120238BA60005BAA2 /* ShoppingCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartTableViewController.swift; sourceTree = "<group>"; };
 		199DE5C320238BD00005BAA2 /* CheckoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutTableViewController.swift; sourceTree = "<group>"; };
 		199DE5C520238F980005BAA2 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		592740EE202490210047D180 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		F77AFF89202379B5005307D2 /* HandCode-Analytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HandCode-Analytics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77AFF8C202379B6005307D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77AFF8E202379B6005307D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				199DE5B52023888E0005BAA2 /* Product.swift */,
 				199DE5C520238F980005BAA2 /* ShoppingCart.swift */,
+				592740EE202490210047D180 /* ServerManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				199DE5C620238F980005BAA2 /* ShoppingCart.swift in Sources */,
 				199DE5C420238BD00005BAA2 /* CheckoutTableViewController.swift in Sources */,
 				199DE5BE20238B570005BAA2 /* ShowcaseCollectionViewController.swift in Sources */,
+				592740EF202490210047D180 /* ServerManager.swift in Sources */,
 				F77AFF8D202379B6005307D2 /* AppDelegate.swift in Sources */,
 				199DE5B62023888E0005BAA2 /* Product.swift in Sources */,
 			);
@@ -499,7 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2B6823827K;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
 				INFOPLIST_FILE = "HandCode-Analytics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-Analytics";
@@ -514,7 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2B6823827K;
+				DEVELOPMENT_TEAM = 524D3B9S8F;
 				INFOPLIST_FILE = "HandCode-Analytics/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mackmobile.HandCode-Analytics";
