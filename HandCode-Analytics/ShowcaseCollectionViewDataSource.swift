@@ -13,16 +13,16 @@ private let reuseIdentifier = "default"
 class ShowcaseCollectionViewDataSource:  NSObject,UICollectionViewDataSource {
     
     
-//    var productList = [Product]()
+    var productList = [Product]()
     
     override init() {
         super.init()
         
     }
     
-//    func load(productList:[Product]){
-//        self.productList = productList
-//    }
+    func load(productList:[Product]){
+        self.productList = productList
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -32,26 +32,23 @@ class ShowcaseCollectionViewDataSource:  NSObject,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-//        return self.productList.count
-        return 10
+        return self.productList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let reuseCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-//
-//        guard let cell = reuseCell as? ProductCollectionViewCell else {
-//            Logger.logError(in: self, message: "Error to cast \(reuseCell) to ProductCollectionViewCell ")
-//            return UICollectionViewCell()
-//        }
-//
-//        let product = self.productList[indexPath.row]
-//
-//        cell.outletTitle.text = product.title
-//        cell.outletBackground.image = UIImage(data: product.photo! as Data)
-//
-//        return cell
+        let reuseCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+
+        guard let cell = reuseCell as? ProductCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+
+        let product = self.productList[indexPath.row]
         
-        return UICollectionViewCell()
+        cell.outletTitle.text = product.name
+        cell.outletBackground.image = product.displayImage
+
+        return cell
+        
     }
     
     

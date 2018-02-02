@@ -11,25 +11,23 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class ShowcaseCollectionViewController: UICollectionViewController {
-    var products = [Product]()
     var selectedProduct: Product?
+    var dataSource = ShowcaseCollectionViewDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //FIXME: populate array of products
-
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = false
 
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        //
+        self.setup()
+        self.loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
+        self.loadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,8 +35,57 @@ class ShowcaseCollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - Functions
+    // MARK: Private
+    private func setup(){
+        self.collectionView?.dataSource = self.dataSource
+        
+        if let flowCollectionLayout = self.collectionViewLayout as? UICollectionViewFlowLayout {
+            let baseValueLayout = self.view.bounds.width
+            flowCollectionLayout.itemSize = CGSize(width: baseValueLayout*0.4, height: baseValueLayout*0.4)
+            
+            flowCollectionLayout.minimumLineSpacing = baseValueLayout*0.1
+            
+            flowCollectionLayout.sectionInset = UIEdgeInsets(
+                top: baseValueLayout*0.05,
+                left: baseValueLayout*0.05,
+                bottom: baseValueLayout*0.05,
+                right: baseValueLayout*0.05
+            )
+            
+            flowCollectionLayout.scrollDirection = .vertical
+        }
+        
+        if let collectionViewVerified = self.collectionView {
+            collectionViewVerified.dataSource = self.dataSource
+            collectionViewVerified.delegate = self
+        }
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(ShowcaseCollectionViewController.loadData), for: .valueChanged)
+        self.collectionView?.refreshControl = refreshControl
+        
+    }
+    
+    @objc private func loadData(){
+        do {
+            try ProductManager.shared.getProduct { (productList) in
+                self.dataSource.load(productList: productList)
+                self.collectionView?.reloadData()
+            }
+        }catch{
+            print(error)
+            
+        }
+    }
+    
+    // MARK: UICollectionViewDelegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedProduct = self.dataSource.productList[indexPath.row]
+        self.performSegue(withIdentifier: "toProductDetail", sender: self)
+    }
+    
     // MARK: - Navigation
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toProductDetail" {
             if let view = (segue.destination as? ProductDetailTableViewController), let selectedProduct = self.selectedProduct {
@@ -47,35 +94,5 @@ class ShowcaseCollectionViewController: UICollectionViewController {
         }
     }
     
-    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.selectedProduct = self.products[indexPath.row]
-    }
-
-    // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return self.products.count
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
-        return cell
-    }
-
-    // MARK: UICollectionViewDelegate
-
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
 
 }

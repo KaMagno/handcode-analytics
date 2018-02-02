@@ -16,14 +16,14 @@ class ShoppingCartTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+         self.clearsSelectionOnViewWillAppear = false
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
+        self.changeFooterView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,15 +35,41 @@ class ShoppingCartTableViewController: UITableViewController {
         self.navigationController?.popToRootViewController(animated: true)
     }
     
+    // MARK: - Functions
+    // MARK: Private
+    private func changeFooterView(){
+        if ShoppingCart.shared.products.count == 0 {
+            self.tableView.tableFooterView = MessageViewController.view(with: "Você ainda não fez nenhuma doação 😢")
+        }else{
+            self.tableView.tableFooterView = UIView()
+        }
+    }
+    
     // MARK: UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return ShoppingCart.shared.products.count
+    }
+    
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            ShoppingCart.shared.products.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            self.changeFooterView()
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

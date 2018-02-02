@@ -9,16 +9,30 @@
 import UIKit
 
 class ProductDetailTableViewController: UITableViewController {
+    
+    
+    @IBOutlet weak var outletImage: UIImageView!
+    @IBOutlet weak var outletName: UILabel!
+    @IBOutlet weak var outletValue: UILabel!
+    @IBOutlet weak var outletDescription: UITextView!
+    
     var product: Product?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.outletImage.layer.cornerRadius = 15.0
+        self.outletImage.clipsToBounds = true
+        
+        if let productVerified = self.product {
+            self.outletName.text = productVerified.name
+            self.outletImage.image = productVerified.displayImage
+            self.outletDescription.text = productVerified.description
+            
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .currency
+            self.outletValue.text = numberFormatter.string(from: NSNumber(value:productVerified.price))
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
