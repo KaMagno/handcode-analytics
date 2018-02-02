@@ -413,7 +413,7 @@
                     </collectionView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="rG8-hP-RJT"/>
-                        <barButtonItem title="Carinho" style="done" id="DpU-xH-MVW">
+                        <barButtonItem title="Carrinho" style="done" id="DpU-xH-MVW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="EEd-DM-4cq" kind="show" identifier="toShoppingCart" id="u82-7T-G3N"/>
@@ -550,7 +550,7 @@
                     </tableView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="utR-gi-mJC"/>
-                        <barButtonItem title="Carinho" style="done" id="AUF-ZE-WZF">
+                        <barButtonItem title="Carrinho" style="done" id="AUF-ZE-WZF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="EEd-DM-4cq" kind="show" identifier="toShoppingCart" id="Zng-sn-5Lc"/>
@@ -830,6 +830,6 @@
         <image name="paw" width="2000" height="1873"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u82-7T-G3N"/>
+        <segue reference="Zng-sn-5Lc"/>
     </inferredMetricsTieBreakers>
 </document>
