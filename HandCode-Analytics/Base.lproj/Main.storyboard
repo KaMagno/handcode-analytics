@@ -515,7 +515,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="9"/>
-                                                    <state key="normal" title="Comprar" backgroundImage="paw">
+                                                    <state key="normal" title="Doe" backgroundImage="paw">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
@@ -564,7 +564,7 @@
             </objects>
             <point key="canvasLocation" x="3473" y="34"/>
         </scene>
-        <!--Carrinho-->
+        <!--Carrinho de Doação-->
         <scene sceneID="dWA-gU-9Zr">
             <objects>
                 <tableViewController id="EEd-DM-4cq" customClass="ShoppingCartTableViewController" customModule="HandCode_Analytics" customModuleProvider="target" sceneMemberID="viewController">
@@ -609,7 +609,7 @@
                             <outlet property="delegate" destination="EEd-DM-4cq" id="CJK-GV-wpp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Carrinho" id="qKu-7a-nuV">
+                    <navigationItem key="navigationItem" title="Carrinho de Doação" id="qKu-7a-nuV">
                         <barButtonItem key="leftBarButtonItem" title="Voltar a Comprar" id="8N2-Bw-Tjn">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -726,18 +726,18 @@
                                     <constraint firstAttribute="width" secondItem="tTe-D2-jY6" secondAttribute="height" multiplier="1:1" id="WPf-FZ-mcO"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra Efetuda com Sucesso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsA-Yk-aFI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doação Efetuda com Sucesso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsA-Yk-aFI">
                                 <rect key="frame" x="20" y="20" width="335" height="137.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hH-ks-eaB">
-                                <rect key="frame" x="90" y="558" width="194" height="49"/>
+                                <rect key="frame" x="111" y="558" width="153" height="49"/>
                                 <color key="backgroundColor" red="0.1529411765" green="0.68235294120000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
-                                <state key="normal" title="Voltar a Comprar">
+                                <state key="normal" title="Voltar a Doar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
