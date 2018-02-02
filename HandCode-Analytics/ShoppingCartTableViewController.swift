@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let reuseIdentifier = "Cell"
+
 class ShoppingCartTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -19,6 +21,10 @@ class ShoppingCartTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,7 +32,28 @@ class ShoppingCartTableViewController: UITableViewController {
     }
     
     @IBAction func didPressBackButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    // MARK: UITableViewDataSource
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of items
+        return ShoppingCart.shared.products.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! ShoppingCartTableViewCell
+        let product = ShoppingCart.shared.products[indexPath.row]
+        
+        cell.productName.text = product.name
+        cell.productPrice.text = "R$ \(product.price)"
+        
+        return cell
     }
     
     // MARK: - Navigation
