@@ -66,6 +66,7 @@ class ShoppingCartTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            //TODO: Event name:Removed_from_Cart - attribute[product_id:product.id,product_name:product.name,product_price:product.price]
             ShoppingCart.shared.products.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             self.changeFooterView()

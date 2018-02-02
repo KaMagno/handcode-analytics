@@ -14,11 +14,6 @@ class CheckoutTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,8 +54,11 @@ class CheckoutTableViewController: UITableViewController {
             return
         }
         
+        
+        
         ServerManager.shared.CompletePurchase(method: method) { (error) in
-            //TODO: Analytics
+            //TODO: Event name:Purchase_payment - attribute[payment_type:self.paymentMethod!.hashValue]
+            
             
             completion(error)
         }

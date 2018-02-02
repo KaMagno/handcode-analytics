@@ -81,6 +81,7 @@ class ShowcaseCollectionViewController: UICollectionViewController {
     
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //TODO: Event name:Visualized_Product - attribute[product_id:product.id,product_name:product.name,product_price:product.price]
         self.selectedProduct = self.dataSource.productList[indexPath.row]
         self.performSegue(withIdentifier: "toProductDetail", sender: self)
     }

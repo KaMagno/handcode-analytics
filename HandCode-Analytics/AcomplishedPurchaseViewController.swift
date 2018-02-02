@@ -14,6 +14,8 @@ class AcomplishedPurchaseViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //TODO: Event name:Purchased_accomplished - attribute[product_id:product.id,product_name:product.name,product_price:product.price]
     }
     
     override func viewWillAppear(_ animated: Bool) {

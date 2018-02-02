@@ -45,6 +45,7 @@ class SignUpTableViewController: UITableViewController {
     }
     
     func signUp(completion: @escaping (Error?) -> Void) {
+        
         guard let email = self.emailField.text, let password = self.passwordField.text, let passwordConfirm = self.passwordConfirmField.text else {
             completion(Failure.failedToGetFields)
             return
@@ -52,7 +53,7 @@ class SignUpTableViewController: UITableViewController {
         
         if password == passwordConfirm {
             ServerManager.shared.SignUp(email: email, password: password) { (error) in
-                //TODO: analytics
+                //TODO: Event name:SignUp
                 completion(error)
             }
         } else {

@@ -47,6 +47,7 @@ class ProductDetailTableViewController: UITableViewController {
     @IBAction func didPressBuyButton(_ sender: Any) {
         if let product = self.product {
             ShoppingCart.shared.add(product, completion: {
+                //TODO: Event name:Added_To_Cart - attribute[product_id:product.id,product_name:product.name,product_price:product.price]
                 self.performSegue(withIdentifier: "toShoppingCart", sender: self)
             })
         }
