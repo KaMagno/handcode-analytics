@@ -413,7 +413,7 @@
                     </collectionView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="rG8-hP-RJT"/>
-                        <barButtonItem title="Carinho" style="done" id="DpU-xH-MVW">
+                        <barButtonItem title="Carrinho" style="done" id="DpU-xH-MVW">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="EEd-DM-4cq" kind="show" identifier="toShoppingCart" id="u82-7T-G3N"/>
@@ -550,7 +550,7 @@
                     </tableView>
                     <toolbarItems>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="utR-gi-mJC"/>
-                        <barButtonItem title="Carinho" style="done" id="AUF-ZE-WZF">
+                        <barButtonItem title="Carrinho" style="done" id="AUF-ZE-WZF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="EEd-DM-4cq" kind="show" identifier="toShoppingCart" id="Zng-sn-5Lc"/>
@@ -573,7 +573,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="pJQ-Tu-uko">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="60" id="pJQ-Tu-uko" customClass="ShoppingCartTableViewCell" customModule="HandCode_Analytics" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJQ-Tu-uko" id="NMG-A2-h4f">
@@ -602,6 +602,10 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="OfY-87-97V" secondAttribute="bottom" id="dcb-bW-YYF"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="productName" destination="GEc-O4-2rz" id="Okl-ss-ZoO"/>
+                                    <outlet property="productPrice" destination="OfY-87-97V" id="Mtl-EM-gg3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -705,17 +709,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Forma de Pagamento" id="ipC-gN-BUX"/>
                     <connections>
-                        <segue destination="s2O-yc-RSm" kind="presentation" identifier="toAccomplishedPurchaseViewController" id="Z2F-43-pFQ"/>
+                        <segue destination="s2O-yc-RSm" kind="show" identifier="toAccomplishedPurchase" id="Z2F-43-pFQ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gK-Tf-MCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3913" y="811"/>
         </scene>
-        <!--View Controller-->
+        <!--Acomplished Purchase View Controller-->
         <scene sceneID="INm-ur-qJr">
             <objects>
-                <viewController id="s2O-yc-RSm" sceneMemberID="viewController">
+                <viewController id="s2O-yc-RSm" customClass="AcomplishedPurchaseViewController" customModule="HandCode_Analytics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vi2-Zg-Nim">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -740,6 +744,9 @@
                                 <state key="normal" title="Voltar a Doar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressEndButton:" destination="s2O-yc-RSm" eventType="touchUpInside" id="bf0-dZ-eXf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -830,6 +837,6 @@
         <image name="paw" width="2000" height="1873"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u82-7T-G3N"/>
+        <segue reference="Zng-sn-5Lc"/>
     </inferredMetricsTieBreakers>
 </document>

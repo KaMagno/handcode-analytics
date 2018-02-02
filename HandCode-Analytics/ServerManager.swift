@@ -21,7 +21,7 @@ public class ServerManager {
         completion(nil)
     }
     
-    func CompletePurchase(completion: @escaping (Error?) -> Void) {
+    func CompletePurchase(method: PaymentMethod, completion: @escaping (Error?) -> Void) {
         print("compra efetuada")
         completion(nil)
     }
