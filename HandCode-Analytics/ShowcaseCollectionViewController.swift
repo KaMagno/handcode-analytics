@@ -73,7 +73,6 @@ class ShowcaseCollectionViewController: UICollectionViewController {
             }
         }catch{
             print(error)
-            
         }
     }
     
