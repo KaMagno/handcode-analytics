@@ -12,11 +12,6 @@ class AcomplishedPurchaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-<<<<<<< HEAD
-        
-        
-=======
->>>>>>> master
     }
     
     override func viewWillAppear(_ animated: Bool) {
