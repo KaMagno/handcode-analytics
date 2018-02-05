@@ -52,7 +52,7 @@ class SignUpTableViewController: UITableViewController {
         
         if password == passwordConfirm {
             ServerManager.shared.SignUp(email: email, password: password) { (error) in
-                //TODO: analytics
+                //TODO: Analytics - Event:SignUp
                 completion(error)
             }
         } else {

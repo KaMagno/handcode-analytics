@@ -44,15 +44,8 @@ class CheckoutTableViewController: UITableViewController {
             }
         }
     }
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
     
+    // MARK: - Functions
     func checkOut(completion: @escaping (Error?) -> Void) {
         guard let method = self.paymentMethod else {
             completion(Failure.failedToGetFields)
@@ -60,7 +53,7 @@ class CheckoutTableViewController: UITableViewController {
         }
         
         ServerManager.shared.CompletePurchase(method: method) { (error) in
-            //TODO: Analytics
+            //TODO: Analytics - Event:Purchase_Completed
             
             completion(error)
         }

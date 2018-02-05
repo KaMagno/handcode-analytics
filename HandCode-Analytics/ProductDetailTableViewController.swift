@@ -38,7 +38,12 @@ class ProductDetailTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //TODO: Analytics - Event:ViewItem | Parameters:[Product_Id]
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -47,6 +52,7 @@ class ProductDetailTableViewController: UITableViewController {
     @IBAction func didPressBuyButton(_ sender: Any) {
         if let product = self.product {
             ShoppingCart.shared.add(product, completion: {
+                //TODO: Analytics - Event:Sent_To_Cart | Parameters:[Product_Id]
                 self.performSegue(withIdentifier: "toShoppingCart", sender: self)
             })
         }

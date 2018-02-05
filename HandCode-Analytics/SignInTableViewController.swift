@@ -46,7 +46,7 @@ class SignInTableViewController: UITableViewController {
         }
         
         ServerManager.shared.SignIn(email: email, password: password) { (error) in
-            //TODO: Analytics
+            //TODO: Analytics - Event:SignIn
             completion(error)
         }
     }
