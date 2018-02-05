@@ -13,12 +13,6 @@ class CheckoutTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,7 +21,6 @@ class CheckoutTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -55,7 +48,9 @@ class CheckoutTableViewController: UITableViewController {
         ServerManager.shared.CompletePurchase(method: method) { (error) in
             //TODO: Analytics - Event:Purchase_Completed
             
-            completion(error)
+            ShoppingCart.shared.clear {
+                completion(error)
+            }
         }
     }
 }
