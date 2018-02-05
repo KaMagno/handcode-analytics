@@ -62,7 +62,9 @@ class CheckoutTableViewController: UITableViewController {
         ServerManager.shared.CompletePurchase(method: method) { (error) in
             //TODO: Analytics
             
-            completion(error)
+            ShoppingCart.shared.clear {
+                completion(error)
+            }
         }
     }
 }
